@@ -10,6 +10,7 @@ import { Avatar, AvatarImage } from "./ui/avatar";
 import { AvatarFallback } from "@radix-ui/react-avatar";
 import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
+import { LogOut } from "lucide-react";
 
 interface SidebarProps {
   isCollapsed: boolean;
@@ -96,7 +97,10 @@ const Sidebar = ({ isCollapsed }: SidebarProps) => {
 								{"Jhon Doe"}
 							</p>
 						</div>
-					)}            
+					)}   
+          <div className="flex">
+            <LogOut size={22} cursor={"pointer"} /> 
+          </div>         
         </div>
       </div>
     </div>
